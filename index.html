@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shunk is a thrilling 2-player dice game where you roll, strategize, and aim to bank enough points to reach 100 before your opponent. Will you play it safe or take risks? Challenge a friend and find out!"
+    />
+
+    <title>Shunk</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="aesthetics/shunk-icon.png"
+      type="image/png"
+    />
+
+    <!-- Title, without branding. -->
+    <meta property="og:title" content="Shunk" />
+    <!-- Name, not URL (e.g. Apple, not apple.com) -->
+    <meta property="og:site_name" content="Shunk" />
+    <!-- URL. Should match canonical URL for SEO. Unique identifier for your article. -->
+    <meta property="og:url" content="https://kareem-aez.github.io/shunk/" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta
+      property="og:description"
+      content="Shunk is a thrilling 2-player dice game where you roll, strategize, and aim to bank enough points to reach 100 before your opponent. Will you play it safe or take risks? Challenge a friend and find out!"
+    />
+    <!-- Image for article. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="aesthetics/shunk-og.png" />
+    <meta
+      property="og:image"
+      content="https://kareem-aez.github.io/shunk/aesthetics/shunk-og.png"
+    />
+
+    <!-- Twitter Meta Tags. -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://kareem-aez.github.io/shunk/" />
+    <meta name="twitter:title" content="Shunk" />
+    <meta
+      name="twitter:description"
+      content="Content description less than 200 characters"
+    />
+    <meta name="twitter:image" content="aesthetics/shunk-twitter.png" />
+    <meta
+      name="twitter:image"
+      content="https://kareem-aez.github.io/shunk/aesthetics/shunk-twitter.png"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 aria-label="Shunk">
+        <img src="aesthetics/shunk-logo.webp" alt="" />
+      </h1>
+      <button class="flat-shadow btn btn--round btn-info">?</button>
+    </header>
+
+    <section class="how-to-play hidden">
+      <span class="how-to-play__close">x</span>
+      <h2>How to Play</h2>
+      <ol class="rules-list">
+        <li>
+          <strong>Objective:</strong>
+          <p>
+            The goal of the game is to be the first player to reach
+            <strong>100 points</strong>.
+          </p>
+        </li>
+        <li>
+          <strong>Starting the Game:</strong>
+          <p>
+            The game randomly selects which player will go first. Each player
+            takes turns rolling the dice.
+          </p>
+        </li>
+        <li>
+          <strong>Player's Turn:</strong>
+          <p>
+            On your turn, click the <strong>“Roll”</strong> button to roll the
+            dice. The number you roll will be added to your
+            <strong>current score</strong>.
+          </p>
+        </li>
+        <li>
+          <strong>Rolling a 1:</strong>
+          <p>
+            If you roll a <strong>1</strong>, your
+            <strong>current score</strong> for that turn is reset to 0. Your
+            turn ends, and the next player takes their turn.
+          </p>
+        </li>
+        <li>
+          <strong>Shunk (Hold):</strong>
+          <p>
+            At any point during your turn, after rolling, you can click the
+            <strong>“Shunk”</strong> button to "bank" your
+            <strong>current score</strong>. Your
+            <strong>current score</strong> is added to your
+            <strong>total score</strong>, and it becomes the next player's turn.
+          </p>
+        </li>
+        <li>
+          <strong>Winning the Game:</strong>
+          <p>
+            The first player to reach or exceed <strong>100 points</strong> in
+            their <strong>total score</strong> wins the game!
+          </p>
+        </li>
+        <li>
+          <strong>Game Over:</strong>
+          <p>
+            Once a player wins, click the <strong>“Play Again”</strong> button
+            to reset the game and start over.
+          </p>
+        </li>
+      </ol>
+      <div class="important-notes">
+        <h3>Important Notes:</h3>
+        <ul>
+          <li>
+            You must roll the dice at least once before you can "Hold" and save
+            your score.
+          </li>
+          <li>
+            Rolling a 1 will reset your score for that turn to 0, so decide
+            whether to risk rolling again or bank your points!
+          </li>
+        </ul>
+      </div>
+      <button class="flat-shadow btn btn--default btn__rules">NOTED</button>
+    </section>
+    <div class="modal__overlay hidden"></div>
+
+    <main>
+      <section class="player player--1">
+        <p class="player__title">player 1</p>
+        <p class="player__main-score player--1__main-score">0</p>
+
+        <p class="player__current">current</p>
+        <p class="player__current-score player--1__current-score">0</p>
+      </section>
+      <section class="player player--2">
+        <p class="player__title">player 2</p>
+        <p class="player__main-score player--2__main-score">0</p>
+
+        <p class="player__current">current</p>
+        <p class="player__current-score player--2__current-score">0</p>
+      </section>
+
+      <div class="middle">
+        <svg class="dice">
+          <use class="dice-src" xlink:href=""></use>
+        </svg>
+
+        <p class="message hidden">message...</p>
+      </div>
+
+      <button class="flat-shadow btn btn--round btn-again">
+        <svg>
+          <use xlink:href="sprite.svg#again"></use>
+        </svg>
+      </button>
+      <button class="flat-shadow btn btn--default btn-roll">roll</button>
+      <button class="flat-shadow btn btn--default btn-shunk">shunk</button>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+    <script src="flatshadow_builder.js"></script>
+  </body>
+</html>
