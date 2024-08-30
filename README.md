@@ -1,19 +1,21 @@
 ![](aesthetics/shunk-og.png)
-# Shunk 🎲
+# Shunk - Pig Game Re-Mastered 🎲
 
-**Shunk** is the third project from Jonas Schmedtmann's "[The Complete JavaScript Course](https://www.udemy.com/share/101Wfe3@JetUOQA5b7oD7aQshD-rlc9lnqIh5lz2hUjXtMipOi9QmcwOqTq0_-9SmUsYahJy/)". This game has been completely redesigned and reimagined with a fresh approach, built using **HTML**, **CSS**, and **JavaScript**. Shunk is a fun and strategic 2-player dice game where players take turns rolling the dice, banking points, and racing to reach 100 points first. The game combines luck with strategy, as players must decide whether to risk rolling for a higher score or play it safe and bank their points. If a player rolls a 1, their current turn's score resets to zero, and they must pass the turn to their opponent. The first player to accumulate 100 points wins!
+**Shunk - Pig Game Re-Mastered** is the third project from Jonas Schmedtmann's "The Complete JavaScript Course". This reimagined version of the classic Pig dice game is built using **HTML**, **CSS**, and **JavaScript** with a modern approach. Players take turns rolling the dice, banking points, and racing to reach 100 points first. The game blends luck and strategy, where players must decide whether to roll for more points or hold and bank their current score.
 
-## Features
-- **2-Player Mode**: Play head-to-head with a friend!
-- **Dice Roll & Hold Mechanics**: Roll the dice to add to your current score, but be careful! If you roll a 1, you lose all points for that turn. You can also hold and bank your points to play it safe.
-- **Winning Threshold**: The first player to reach **100 points** wins the game.
-- **Game Animations**: Includes animations for the player turns, and errors, enhancing the user experience.
-- **Canvas Confetti Celebration**: When a player wins, a burst of colorful confetti celebrates the victory!
-- **Handling Edge Cases with Animations**: Smooth error-handling animations (such as a shake effect) ensure that even unexpected situations—like trying to roll before starting a turn—are met with visual feedback, making the game more engaging and user-friendly.
+## Key Features
+- **Randomized First Player**: At the start of each game, the first player is randomized, adding a unique twist to each playthrough.
+- **2-Player Mode**: Compete head-to-head with a friend!
+- **Dice Roll & Hold Mechanics**: Roll the dice to add points to your current score. If you roll a 1, your turn ends, and your current score for that round resets to zero. You can also play it safe by holding to bank your points and pass the turn to the opponent.
+- **Winning Threshold**: The first player to reach **100 points** wins.
+- **Game Animations**: Animations make each dice roll, score update, and turn change more engaging.
+- **Error Feedback with Animations**: Special animations, such as the shake effect, give players visual feedback when errors occur (e.g., rolling before the game starts or trying to roll after the game is over).
+- **Canvas Confetti Celebration**: Upon victory, a vibrant confetti burst celebrates the winner using the **canvas-confetti** library.
+
 
 ## Technologies Used
 - **HTML5, CSS3, and JavaScript**: The core technologies powering the game.
-- **canvas-confetti**: [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) is lightweight library used to create fun, celebratory confetti animations when a player wins.
+- **canvas-confetti**: [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) is a lightweight library used to create fun, celebratory confetti animations when a player wins.
 
 ## How to Play
 1. Players take turns rolling the dice. The number on the dice is added to the player's current score.
