@@ -9,6 +9,7 @@
 - **Winning Threshold**: The first player to reach **100 points** wins the game.
 - **Game Animations**: Includes animations for the dice, player turns, and errors, enhancing the user experience.
 - **Canvas Confetti Celebration**: When a player wins, a burst of colorful confetti celebrates the victory!
+- **Handling Edge Cases with Animations**: Smooth error-handling animations (such as a shake effect) ensure that even unexpected situations—like trying to roll before starting a turn—are met with visual feedback, making the game more engaging and user-friendly.
 
 ## Technologies Used
 - **HTML5, CSS3, and JavaScript**: The core technologies powering the game.
@@ -19,6 +20,10 @@
 2. Players can "Hold" their current score and add it to their total score.
 3. If a player rolls a 1, their current score for that turn is lost, and the turn passes to the opponent.
 4. The first player to reach 100 points wins and triggers a confetti celebration!
+
+## Edge Case Handling
+- **Error Animations**: If a player tries to take action outside the normal flow of the game, such as rolling the dice before the game starts or after it ends, a subtle shake animation is triggered to signal the error and provide feedback without interrupting the flow of the game.
+- **Interactive Feedback**: Clear visual cues ensure players are always aware of their actions, whether it's banking points, rolling a 1, or winning the game.
 
 ## Credits 🙌
 - The flat shadow effect was inspired by [Hot Page](https://hot.page).
