@@ -1,7 +1,7 @@
 ![](aesthetics/shunk-og.png)
 # Shunk 🎲
 
-**Shunk** is a fun and strategic 2-player dice game where players take turns rolling the dice, banking points, and racing to reach 100 points first. The game combines luck with strategy, as players must decide whether to risk rolling for a higher score or play it safe and bank their points. If a player rolls a 1, their current turn's score resets to zero, and they must pass the turn to their opponent. The first player to accumulate 100 points wins!
+**Shunk** is the third project from Jonas Schmedtmann's "[The Complete JavaScript Course](https://www.udemy.com/share/101Wfe3@JetUOQA5b7oD7aQshD-rlc9lnqIh5lz2hUjXtMipOi9QmcwOqTq0_-9SmUsYahJy/)". This game has been completely redesigned and reimagined with a fresh approach, built using **HTML**, **CSS**, and **JavaScript**. Shunk is a fun and strategic 2-player dice game where players take turns rolling the dice, banking points, and racing to reach 100 points first. The game combines luck with strategy, as players must decide whether to risk rolling for a higher score or play it safe and bank their points. If a player rolls a 1, their current turn's score resets to zero, and they must pass the turn to their opponent. The first player to accumulate 100 points wins!
 
 ## Features
 - **2-Player Mode**: Play head-to-head with a friend!
@@ -13,7 +13,7 @@
 
 ## Technologies Used
 - **HTML5, CSS3, and JavaScript**: The core technologies powering the game.
-- **canvas-confetti**: A lightweight library used to create fun, celebratory confetti animations when a player wins.
+- **canvas-confetti**: [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) is lightweight library used to create fun, celebratory confetti animations when a player wins.
 
 ## How to Play
 1. Players take turns rolling the dice. The number on the dice is added to the player's current score.
