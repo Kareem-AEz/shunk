@@ -1,7 +1,7 @@
 ![](aesthetics/shunk-og.png)
 # Shunk - Pig Game Re-Mastered 🎲
 
-**Shunk - Pig Game Re-Mastered** is the third project from Jonas Schmedtmann's "The Complete JavaScript Course". This reimagined version of the classic Pig dice game is built using **HTML**, **CSS**, and **JavaScript** with a modern approach. Players take turns rolling the dice, banking points, and racing to reach 100 points first. The game blends luck and strategy, where players must decide whether to roll for more points or hold and bank their current score.
+**Shunk - Pig Game Re-Mastered** is the third project from Jonas Schmedtmann's "[The Complete JavaScript Course](https://www.udemy.com/share/101Wfe3@aq9glBMhKjB56MZNsVr_oHf_awPLJuPp9sskyHezHNabk5QEnkXXEUqAayL6cEUk/)". This reimagined version of the classic Pig dice game is built using **HTML**, **CSS**, and **JavaScript** with a modern approach. Players take turns rolling the dice, banking points, and racing to reach 100 points first. The game blends luck and strategy, where players must decide whether to roll for more points or hold and bank their current score.
 
 ## Key Features
 - **Randomized First Player**: At the start of each game, the first player is randomized, adding a unique twist to each playthrough.
