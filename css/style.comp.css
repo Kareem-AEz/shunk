@@ -156,11 +156,13 @@ main {
       .player__title {
         font-size: 4rem; } }
   .player__main-score {
-    font-size: 4.6rem; }
+    font-size: 4.6rem;
+    font-family: 'New Amsterdam', sans-serif; }
   .player__current {
     margin-top: auto; }
     .player__current-score {
-      margin-bottom: 2.2rem; }
+      margin-bottom: 2.2rem;
+      font-family: 'New Amsterdam', sans-serif; }
   .player--active {
     background-color: rgba(253, 240, 213, 0.8); }
   .player::before {
