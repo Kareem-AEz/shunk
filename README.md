@@ -8,7 +8,7 @@
 - **2-Player Mode**: Compete head-to-head with a friend!
 - **Dice Roll & Hold Mechanics**: Roll the dice to add points to your current score. If you roll a 1, your turn ends, and your current score for that round resets to zero. You can also play it safe by holding to bank your points and pass the turn to the opponent.
 - **Winning Threshold**: The first player to reach **100 points** wins.
-- **Game Animations**: Animations make each dice roll, score update, and turn change more engaging.
+- **Game Animations**: Includes animations for the player turns, and errors, enhancing the user experience.
 - **Error Feedback with Animations**: Special animations, such as the shake effect, give players visual feedback when errors occur (e.g., rolling before the game starts or trying to roll after the game is over).
 - **Canvas Confetti Celebration**: Upon victory, a vibrant confetti burst celebrates the winner using the **canvas-confetti** library.
 
