@@ -1,4 +1,4 @@
-!()[aesthetics/shunk-og.png]
+![](aesthetics/shunk-og.png)
 # Shunk 🎲
 
 **Shunk** is a fun and strategic 2-player dice game where players take turns rolling the dice, banking points, and racing to reach 100 points first. The game combines luck with strategy, as players must decide whether to risk rolling for a higher score or play it safe and bank their points. If a player rolls a 1, their current turn's score resets to zero, and they must pass the turn to their opponent. The first player to accumulate 100 points wins!
