@@ -7,7 +7,7 @@
 - **2-Player Mode**: Play head-to-head with a friend!
 - **Dice Roll & Hold Mechanics**: Roll the dice to add to your current score, but be careful! If you roll a 1, you lose all points for that turn. You can also hold and bank your points to play it safe.
 - **Winning Threshold**: The first player to reach **100 points** wins the game.
-- **Game Animations**: Includes animations for the dice, player turns, and errors, enhancing the user experience.
+- **Game Animations**: Includes animations for the player turns, and errors, enhancing the user experience.
 - **Canvas Confetti Celebration**: When a player wins, a burst of colorful confetti celebrates the victory!
 - **Handling Edge Cases with Animations**: Smooth error-handling animations (such as a shake effect) ensure that even unexpected situations—like trying to roll before starting a turn—are met with visual feedback, making the game more engaging and user-friendly.
 
